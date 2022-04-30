@@ -6,9 +6,9 @@ service AuthService {
     rpc Register (RegisterRequest) returns (RegisterResponse) {}
     rpc Login (LoginRequest) returns (LoginResponse) {}
     rpc Validate (ValidateRequest) returns (ValidateResponse) {}
-    rpc VerifyEmail (VerifyEmailRequest) returns (VerifyEmailResponse) {}
-    rpc ForgetPassword (ForgetPasswordRequest) returns (ForgetPasswordReponse) {}
-    rpc VerifyPassword (VerifyPasswordRequest) returns (VerifyPasswordResponse) {}
+    // rpc VerifyEmail (VerifyEmailRequest) returns (VerifyEmailResponse) {}
+    // rpc ForgetPassword (ForgetPasswordRequest) returns (ForgetPasswordReponse) {}
+    // rpc VerifyPassword (VerifyPasswordRequest) returns (VerifyPasswordResponse) {}
 
 }
 
@@ -20,7 +20,7 @@ message RegisterRequest {
     string password = 3;
 }
 
-message RegisterReponse {
+message RegisterResponse {
     int32 status = 1;
     repeated string error = 2;
 }
